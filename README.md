@@ -3,7 +3,7 @@
 ## html -> image (capture browser screenshot)
 
 ```
-$ docker run -it --rm -v $(pwd):/code  smizy/wkhtmltopdf:0.12.3 \
+$ docker run -it --rm -v $(pwd):/code  smizy/wkhtmltopdf:0.12 \
 wkhtmltoimage \
 --width 414 \
 --height 736 \
