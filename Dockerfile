@@ -15,7 +15,7 @@ RUN set -x \
     && curl -sSL http://download.gna.org/wkhtmltopdf/0.12/${WKHTMLTOPDF_VERSION}/wkhtmltox-${WKHTMLTOPDF_VERSION}_linux-generic-amd64.tar.xz \
        | tar -xJf - -C /usr/local --strip-components=1 
 
-ONBUILD COPY fonts /root/.fonts/
+COPY fonts /root/.fonts/
 
 RUN fc-cache -fv
 
