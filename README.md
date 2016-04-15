@@ -3,7 +3,7 @@
 ## html -> image (capture browser screenshot)
 
 ```
-$ docker run -it --rm -v $(pwd):/code -v $(pwd)/fonts.conf:/root/.config/fontconfig/  smizy/wkhtmltopdf:0.12 \
+$ docker run -it --rm -v $(pwd):/code smizy/wkhtmltopdf:0.12 \
 wkhtmltoimage \
 --width 414 \
 --height 736 \
@@ -14,5 +14,3 @@ wkhtmltoimage \
 http://www.yahoo.co.jp \
 yahoo.png
 ```
-
-https://github.com/eosrei/twemoji-color-font/releases/download/v1.0-beta1/TwitterColorEmoji-SVGinOT-Linux-1.0-beta1.zip
